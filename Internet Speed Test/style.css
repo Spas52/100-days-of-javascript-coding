@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#27272a 50%, #075985 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95); /* Soft white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 2em;
+    border-radius: 15px; /* Rounded corners */
+    font-size: 1.2em;
+    line-height: 1.6em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.container img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for images */
+}
+
+/* Typography */
+p {
+    font-weight: 400;
+    color: #747497; /* Gray text color */
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: 600; /* Slightly bolder text */
+    color: #090931; /* Darker text color */
+}
+
+/* CSS */
+.button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; /* Adjusted */
+    height: 90%; /* Adjusted */
+    border-radius: 10.8px; /* Adjusted */
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  .button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; /* Adjusted */
+    height: 90%; /* Adjusted */
+    border-radius: 10.8px; /* Adjusted */
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+  
+  .button-82-front {
+    display: block;
+    position: relative;
+    padding: 10px 24.3px; /* Adjusted */
+    border-radius: 10.8px; /* Adjusted */
+    font-size: 0.99rem; /* Adjusted */
+    color: white;
+    background: #075985; /* Adjusted */
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  @media (min-width: 768px) {
+    .button-82-front {
+      font-size: 1.125rem; /* Adjusted */
+      padding: 10px 37.8px; /* Adjusted */
+    }
+  }
+  
+  .button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  }
+  
+  .button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .speed-block {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .text p {
+    margin: 0;
+  }
+  
+  
+  
